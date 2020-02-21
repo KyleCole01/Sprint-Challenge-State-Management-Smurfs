@@ -22,7 +22,7 @@ const SmurfDisplay = props => {
       {props.loading && <div>Loading</div>}
       {props.smurfs &&
         props.smurfs.map(smurf => (
-          <div classname="smurf-item">
+          <div className="smurf-item">
             <h2>{smurf.name}</h2>
             <h3>{smurf.age} years old</h3>
             <h3>{smurf.height} tall</h3>

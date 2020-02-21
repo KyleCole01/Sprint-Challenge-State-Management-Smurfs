@@ -13,7 +13,6 @@ export const getSmurfs = () => dispatch => {
   axios
     .get("http://localhost:3333/smurfs")
     .then(res => {
-      // console.log(res.data)
       dispatch({ type: GETTING_SMURF_SUCCESS, payload: res.data });
     })
     .catch(error => {
@@ -22,7 +21,6 @@ export const getSmurfs = () => dispatch => {
 };
 
 export const submitSmurf = newSmurf => dispatch => {
-  // console.log(newSmurf)
   dispatch({ type: SUBMITTING_SMURF_START });
   axios
     .post("http://localhost:3333/smurfs", newSmurf)
