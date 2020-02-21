@@ -26,3 +26,20 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+.App div{
+  border:1px solid blue;
+  background-color: aliceblue;
+  margin:2% auto;
+  border-radius: 5%;
+}
+.village{
+  text-decoration: underline;
+  color: blue;
+}
+.App button{
+  background-color: aliceblue;
+  border-radius: 5%;
+}
+.smurfs{
+  background-color: aliceblue;
+}
